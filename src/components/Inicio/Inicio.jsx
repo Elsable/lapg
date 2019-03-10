@@ -53,9 +53,10 @@ export class Inicio extends Component {
                     />
                 </div>
                 <Card className="col-md-12">
-                    <strong>«Cualquiera puede hablar. Enséñame el código»
-                    </strong> <br />
-                    <h6>-Linus Torvalds</h6>
+                    <strong><h3>«Cualquiera puede hablar. Enséñame el código»
+                    </h3></strong> <br />
+                    <span>
+                    <h4>-Linus Torvalds</h4></span>
                 </Card>
             </div>
         )

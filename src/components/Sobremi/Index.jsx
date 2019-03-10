@@ -7,15 +7,18 @@ export class Aboutme extends Component {
             <div className="container">
                 <div className="">
                     <div className="col-md-7 ">
+                    <h4 align="justify">
+                    <br/>
                         Hola, mi nombre es Luis Antonio actualmente tengo 21 años, soy desarrollador autodidacta y
-    nunca dejo de reinventarme.
-    Cuento con experiencia distribuida entre múltiples facetas, lenguajes y entornos. Puedo programar
-    aplicaciones complejas o para tareas específicas.
-    Actualmente estoy trabajando para mejorar mis habilidades técnicas al
-    tomar cursos en la plataforma Udemy.
-    Estoy buscando un trabajo a tiempo completo y estoy solicitando activamente trabajos relacionados con la técnica. Algunos de los roles que estoy abierto a incluir son ingeniero de software, desarrollador web de fullstack,
-   desarrollador web front-end, desarrollador web back-end, analista de tecnología.  En una empresa, valoro la cultura, el impacto y la misión. 
-   Por favor, siéntase libre de contactarme para oportunidades de trabajo! 
+                        nunca dejo de reinventarme.
+                        Cuento con experiencia distribuida entre múltiples facetas, lenguajes y entornos. Puedo programar
+                        aplicaciones complejas o para tareas específicas.
+                        Actualmente estoy trabajando para mejorar mis habilidades técnicas al
+                        tomar cursos en la plataforma Udemy.
+                        Estoy buscando un trabajo a tiempo completo y estoy solicitando activamente trabajos relacionados con la técnica. Algunos de los roles que estoy abierto a incluir son ingeniero de software, desarrollador web de fullstack,
+                        desarrollador web front-end, desarrollador web back-end, analista de tecnología.  En una empresa, valoro la cultura, el impacto y la misión. 
+                        Por favor, siéntase libre de contactarme para oportunidades de trabajo! 
+                    </h4>
                 </div>
                     <div className="col-md-5 ">
                     <center>
