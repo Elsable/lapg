@@ -23,6 +23,10 @@ export const GET_ALL_COURSES=gql`
 
 getAllCourses{
         _id
+        link
+        image
+        technologies
+        plataform
         title
         category
 }

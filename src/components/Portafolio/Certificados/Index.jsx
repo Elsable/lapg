@@ -42,18 +42,20 @@ export class Certificados extends Component {
 
 
 <Query query={GET_ALL_COURSES}>
-        {({data,loading,error})=>{                                              if(loading) return <div>Loading</div>
+        {({data,loading,error})=>{    
+            console.log(data)
+            if(loading) return <div>Loading</div>
                 if(error) return <div>Error</div>
                 {
-                return data.getAllCourses.map((certi,i)=><div>
-                <Modal imagen={certi.imagen} link={certi.link}><Card
+                return data.getAllCourses.map((certi,i)=><div className="col-md-3">
+                <Modal imagen={certi.image} link={certi.link} technologies={certi.technologies}><Card
                     hoverable
                     style={{ width: 260 }}
-                    cover={<img src={certi.imagen}  className="img-thumbnail" />}
+                    cover={<img src={certi.image}  className="img-thumbnail" />}
                 >
                     <Meta
-                        description={certi.description}
-                        
+                        description={<div>{certi.title} <h4> Plataforma={certi.plataform}</h4> </div>}
+                       
                     />
                 </Card>
                 </Modal> 

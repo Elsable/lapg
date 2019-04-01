@@ -41,10 +41,12 @@ export class Modal extends Component {
                    <Card
                     hoverable
                     style={{ width: 460 }}
-                    cover={<img src={certificado} className="img-thumbnail" />}
+                    cover={<img src={this.props.imagen} className="img-thumbnail" />}
                 ></Card>
+
+         Tecnologias:       {this.props.technologies}
                 <br/>
-                <Button type="primary"href="https://www.udemy.com/certificate/UC-BMGQ4JSD/">
+                <Button type="primary"href={this.props.link}>
                 ver certificado
                 </Button></center>
                   
