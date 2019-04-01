@@ -4,10 +4,16 @@ import {certificado} from './Certificados'
 import {
     Form, Icon, Input, Button,
   } from 'antd';
-
+import {GET_ALL_COURSES} from "./../../../queries";
+import {Query} from "react-apollo";
 
 import { Modal } from './Modal';
 const { Meta } = Card;
+
+
+
+
+
 
 export class Certificados extends Component {
 
@@ -30,7 +36,16 @@ export class Certificados extends Component {
         </Button>
         </Form.Item>
         </Form>
-            {certificado.map((certi,i)=><div>
+
+
+
+
+
+<Query query={GET_ALL_COURSES}>
+        {({data,loading,error})=>{                                              if(loading) return <div>Loading</div>
+                if(error) return <div>Error</div>
+                {
+                return data.getAllCourses.map((certi,i)=><div>
                 <Modal imagen={certi.imagen} link={certi.link}><Card
                     hoverable
                     style={{ width: 260 }}
@@ -44,8 +59,8 @@ export class Certificados extends Component {
                 </Modal> 
             </div>
                 )}
-                
-                 
+	}} 
+             </Query>    
             </div>
         )
     }
