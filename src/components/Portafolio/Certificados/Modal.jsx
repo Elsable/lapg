@@ -33,7 +33,8 @@ export class Modal extends Component {
 
                 <Modal1
                 
-                    title="Complete Modern Amazon clone: Angular 5 and Node.js"
+                    title={<div  style={{textAlign:'center'}}><p>{this.props.plataform}</p>{this.props.title}</div>}
+                      
                     visible={this.state.visible}
                     onOk={this.handleOk}
                     onCancel={this.handleCancel}
@@ -43,9 +44,10 @@ export class Modal extends Component {
                     style={{ width: 460 }}
                     cover={<img src={this.props.imagen} className="img-thumbnail" />}
                 ></Card>
-
-         Tecnologias:       {this.props.technologies}
+                <p style={{color:'dark'}}>
+                Tecnologias: {this.props.technologies}
                 <br/>
+                Descripcion: {this.props.description}</p>
                 <Button type="primary"href={this.props.link}>
                 ver certificado
                 </Button></center>

@@ -16,7 +16,7 @@ class App extends Component {
 
         <div className="footer-copyright" style={{ backgroundColor:"#3E4551",color:"#fff" }}>
             <div className="container-fluid"> 2018 Luis Antonio Padre Garcia </div>
-            
+            wow
         </div>
       </div>
     );

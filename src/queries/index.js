@@ -1,19 +1,6 @@
 import gql from "graphql-tag";
 
 
-export const GET_RECIPE = gql`
-  query($_id: ID!) {
-    getRecipe(_id: $_id) {
-    _id
-    name
-    category
-    description
-    instructions
-    createdDate
-    likes
-  }
-  }
-`;
 
 
 
@@ -25,6 +12,7 @@ getAllCourses{
         _id
         link
         image
+        description
         technologies
         plataform
         title
