@@ -4,6 +4,8 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import certificao1 from './Certificados/UC-BMGQ4JSD.jpg'
 import { Certificados } from './Certificados/Index';
 import { Skills } from './Skills/Skills';
+import PDF from 'react-pdf-js';
+import LAPG from './CV/DevOps-Developer-Luis-Antonio-Padre.pdf'
 
 const TabPane = Tabs.TabPane;
 
@@ -16,20 +18,102 @@ const renderTabBar = (props, DefaultTabBar) => (
 );
 
 export default class Todos extends Component {
-constructor(props){
-super(props);
-}
+  state = {};
 
-    render() {
-        return (
-  <StickyContainer className="container">
-    <Tabs defaultActiveKey="1" renderTabBar={renderTabBar}>
-      <TabPane tab="Skills ★ " key="1" ><Skills/></TabPane>
-      <TabPane tab="Trabajos" key="2">Estadia en CAASIM y en UNAM(Facultad de Psicologia)</TabPane>
-      <TabPane tab="Certificados" key="3"><Certificados/></TabPane>
-      <TabPane tab="Proyectos" key="4">Proyectos</TabPane>
-    </Tabs>
-  </StickyContainer>
-        )
+  onDocumentComplete = (pages) => {
+    this.setState({ page: 1, pages });
+  }
+
+  handlePrevious = () => {
+    this.setState({ page: this.state.page - 1 });
+  }
+
+  handleNext = () => {
+    this.setState({ page: this.state.page + 1 });
+  }
+
+  renderPagination = (page, pages) => {
+    let previousButton = <li className="previous" onClick={this.handlePrevious}><a href="#?"><i className="fa fa-arrow-left"></i> Atras</a></li>;
+    if (page === 1) {
+      previousButton = <li className="previous disabled"><a href="#?"><i className="fa fa-arrow-left"></i> Atras</a></li>;
     }
+    let nextButton = <li className="next" onClick={this.handleNext}><a href="#?">Siguiente <i className="fa fa-arrow-right"></i></a></li>;
+    if (page === pages) {
+      nextButton = <li className="next disabled"><a href="#?">Siguiente <i className="fa fa-arrow-right"></i></a></li>;
+    }
+    return (
+      <nav>
+        <ul className="container jumbotron">
+        <div className="    row">
+          <div className="pager col-md-2 ">
+            {previousButton}
+          </div>
+          <div  className="pager col-md-8 row">
+          <div className="col-md-6">
+          <form method="get" action="https://doc-0g-8s-docs.googleusercontent.com/docs/securesc/oid0invqpiesjugjbpe27n37si1vpjp9/j81spt8gh5h39lj9irhrs5kumubbdkbd/1554393600000/08610602388310005526/08610602388310005526/1pLbcb1Wx1jKraVzSPMoAQYifQnyA2IzG?e=download">
+          <button className="btn btn-primary  " type="submit">Ver CV</button>
+          </form>
+        </div>
+          <div className="col-md-6">
+            
+          
+          <form method="get" action="https://doc-0g-8s-docs.googleusercontent.com/docs/securesc/oid0invqpiesjugjbpe27n37si1vpjp9/j81spt8gh5h39lj9irhrs5kumubbdkbd/1554393600000/08610602388310005526/08610602388310005526/1pLbcb1Wx1jKraVzSPMoAQYifQnyA2IzG?e=download">
+                    <button className="btn btn-primary  " type="submit">Descargar CV</button>
+          </form>
+
+          </div>
+
+          
+          </div>
+          <div  className="pager col-md-2 ">
+            {nextButton}
+          </div>
+          </div>
+        </ul>
+      </nav>
+    );
+  }
+
+  constructor(props) {
+    super(props);
+  }
+
+
+  render() {
+    let pagination = null;
+    if (this.state.pages) {
+      pagination = this.renderPagination(this.state.page, this.state.pages);
+    }
+    return (
+      <StickyContainer className="container">
+        <Tabs defaultActiveKey="5" renderTabBar={renderTabBar}>
+          <TabPane tab="Habilidades duras ★ " key="1" ><Skills /></TabPane>
+          <TabPane tab="Trabajos" key="2">Estadia en CAASIM y en UNAM(Facultad de Psicologia)</TabPane>
+          <TabPane tab="Certificados" key="3"><Certificados /></TabPane>
+          <TabPane tab="Proyectos" key="4">Proyectos</TabPane>
+          <TabPane tab="Curriculum vitae" key="5">
+            <div className="col-md-12 ">
+
+
+              {pagination}
+              <div className="row">
+                <div className="col-md-1"></div>
+
+                <PDF
+                  style={{}}
+                  className="col-md-10"
+                  file={LAPG}
+                  onDocumentComplete={this.onDocumentComplete}
+                  page={this.state.page}
+                />
+                <div className="col-md-1"></div>
+
+
+              </div>
+            </div>
+          </TabPane>
+        </Tabs>
+      </StickyContainer>
+    )
+  }
 }
