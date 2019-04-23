@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { Tabs } from 'antd';
+
 import { StickyContainer, Sticky } from 'react-sticky';
-import certificao1 from './Certificados/UC-BMGQ4JSD.jpg'
-import { Certificados } from './Certificados/Index';
-import { Skills } from './Skills/Skills';
+
 import PDF from 'react-pdf-js';
+
+import { Certificados } from './Certificados/Index';
+import Proyectos from './Proyectos/Index';
+import { Skills } from './Skills/Skills';
 import LAPG from './CV/DevOps-Developer-Luis-Antonio-Padre.pdf'
 
 const TabPane = Tabs.TabPane;
@@ -86,11 +89,11 @@ export default class Todos extends Component {
     }
     return (
       <StickyContainer className="container">
-        <Tabs defaultActiveKey="5" renderTabBar={renderTabBar}>
+        <Tabs defaultActiveKey="4" renderTabBar={renderTabBar}>
           <TabPane tab="Habilidades duras ★ " key="1" ><Skills /></TabPane>
           <TabPane tab="Trabajos" key="2">Estadia en CAASIM y en UNAM(Facultad de Psicologia)</TabPane>
           <TabPane tab="Certificados" key="3"><Certificados /></TabPane>
-          <TabPane tab="Proyectos" key="4">Proyectos</TabPane>
+          <TabPane tab="Proyectos" key="4"><Proyectos/></TabPane>
           <TabPane tab="Curriculum vitae" key="5">
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
