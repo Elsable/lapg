@@ -21,7 +21,7 @@ export default class CardPrincipal extends Component {
 		}
 
 		let DatoCSSFR = fr.frcss.map((item) => (
-			<div className="col-md-4" style={{ paddingTop: 10 }}>
+			<div className=" col-sm-4 col-md-4 col-lg-4 col-xl-4" style={{ paddingTop: 10 }}>
 				<Card>
 					{item.nombre}
 					<br />
@@ -31,7 +31,7 @@ export default class CardPrincipal extends Component {
 		));
 
 		let DatoJSFR = fr.frjs.map((item) => (
-			<div className="col-md-4" style={{ paddingTop: 10 }}>
+			<div className=" col-sm-4 col-md-4 col-lg-4 col-xl-4" style={{ paddingTop: 10 }}>
 				<Card>
 					{item.nombre}
 					<br />
@@ -44,7 +44,7 @@ export default class CardPrincipal extends Component {
 			<div className="jumbotron">
 				<div className="row">
 					<div
-						className="col-md-6 border-right border-dark"
+						className=" col-sm-6 col-md-6 col-lg-6 col-xl-6 border-right border-dark"
 						style={{ background: '#eee', borderBottomColor: 'red' }}
 					>
 						<div className="border-bottom border-dark">
@@ -67,7 +67,7 @@ export default class CardPrincipal extends Component {
 			</div> 
 							</h5> */}
 					</div>
-					<div className="col-md-6 border-left border-dark">
+					<div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 border-left border-dark">
 						<div className="border-bottom  border-dark">
 							<h5 className="display-4">
                 {' '}

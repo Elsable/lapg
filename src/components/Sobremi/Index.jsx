@@ -6,7 +6,7 @@ export class Aboutme extends Component {
         return (
             <div className="container">
                 <div className="">
-                    <div className="col-md-7 ">
+                    <div className=" col-sm-7 col-md-7 col-lg-7 col-xl-7">
                     <h4 align="justify">
                     <br/>
                         Hola, mi nombre es Luis Antonio actualmente tengo 21 años, soy desarrollador autodidacta y
@@ -20,7 +20,7 @@ export class Aboutme extends Component {
                         Por favor, siéntase libre de contactarme para oportunidades de trabajo! 
                     </h4>
                 </div>
-                    <div className="col-md-5 ">
+                    <div className=" col-sm-5 col-md-5 col-lg-5 col-xl-5">
                     <center>
 
                     {/* <img  src={imagen} height="400px" width="90%"/> */}

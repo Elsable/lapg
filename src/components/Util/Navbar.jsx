@@ -7,7 +7,7 @@ export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-fixed-top  navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-fixed-top  navbar-expand-lg navbar-expand-md navbar-expand-xm navbar-light navbar-dark bg-dark">
 
         
           {/* <a classNameName="navbar-brand" href="#"> */}

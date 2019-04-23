@@ -52,7 +52,7 @@ export class Inicio extends Component {
                         onError={err => console.log('error', err)}
                     />
                 </div>
-                <Card className="col-md-12">
+                <Card className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <strong><h3>«Cualquiera puede hablar. Enséñame el código»
                     </h3></strong> <br />
                     <span>

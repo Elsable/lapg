@@ -20,7 +20,7 @@ export class Certificados extends Component {
     render() {
 
         return (
-            <div className="col-md-12">
+            <div className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
                 <Form layout="inline" onSubmit={this.handleSubmit}>
 
@@ -46,11 +46,10 @@ export class Certificados extends Component {
                         console.log(data)
                         if (loading) return <div>Loading</div>
                         if (error) return <div>Error</div>
-                        {
-                            return data.getAllCourses.map((certi, i) => <div className="col-md-3">
+                        {                                                               
+                            return data.getAllCourses.map((certi, i) => <div className="col-sm-3 col-md-3 col-lg-3 col-xl-3">
                                 <Modal imagen={certi.image} link={certi.link} title={certi.title} description={certi.description} plataform={certi.plataform} technologies={certi.technologies}><Card
                                     hoverable
-                                    style={{ width: 260 }}
                                     cover={<img src={certi.image} className="img-thumbnail" />}
                                 >
                                     <Meta

@@ -18,7 +18,7 @@ export class Skills extends Component {
       BackEnd
     
     </span>} key="1">
-    <div className="col-md-12">
+    <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
     
     <Lenguajes/>
     
@@ -29,7 +29,7 @@ export class Skills extends Component {
       FrontEnd
     <img style={{  width:32}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png"/>
     </span>} key="2">
-      <div className="col-md-12">
+      <div className=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
     
     <CardPrincipal/>
     

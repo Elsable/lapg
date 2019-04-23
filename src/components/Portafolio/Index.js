@@ -45,16 +45,16 @@ export default class Todos extends Component {
       <nav>
         <ul className="container jumbotron">
         <div className="    row">
-          <div className="pager col-md-2 ">
+          <div className="pager  col-sm-2 col-md-2 col-lg-2 col-xl-2">
             {previousButton}
           </div>
-          <div  className="pager col-md-8 row">
-          <div className="col-md-6">
+          <div  className="pager col-sm-8 col-md-8 col-lg-8 col-xl-8 row">
+          <div className=" col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <form method="get" action="https://doc-0g-8s-docs.googleusercontent.com/docs/securesc/oid0invqpiesjugjbpe27n37si1vpjp9/j81spt8gh5h39lj9irhrs5kumubbdkbd/1554393600000/08610602388310005526/08610602388310005526/1pLbcb1Wx1jKraVzSPMoAQYifQnyA2IzG?e=download">
           <button className="btn btn-primary  " type="submit">Ver CV</button>
           </form>
         </div>
-          <div className="col-md-6">
+          <div className=" col-sm-6 col-md-6 col-lg-6 col-xl-6">
             
           
           <form method="get" action="https://doc-0g-8s-docs.googleusercontent.com/docs/securesc/oid0invqpiesjugjbpe27n37si1vpjp9/j81spt8gh5h39lj9irhrs5kumubbdkbd/1554393600000/08610602388310005526/08610602388310005526/1pLbcb1Wx1jKraVzSPMoAQYifQnyA2IzG?e=download">
@@ -65,7 +65,7 @@ export default class Todos extends Component {
 
           
           </div>
-          <div  className="pager col-md-2 ">
+          <div  className="pager  col-sm-2 col-md-2 col-lg-2 col-xl-2">
             {nextButton}
           </div>
           </div>
@@ -92,21 +92,19 @@ export default class Todos extends Component {
           <TabPane tab="Certificados" key="3"><Certificados /></TabPane>
           <TabPane tab="Proyectos" key="4">Proyectos</TabPane>
           <TabPane tab="Curriculum vitae" key="5">
-            <div className="col-md-12 ">
+            <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
 
               {pagination}
               <div className="row">
-                <div className="col-md-1"></div>
+                <div className="col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
 
                 <PDF
-                  style={{}}
-                  className="col-md-10"
                   file={LAPG}
                   onDocumentComplete={this.onDocumentComplete}
                   page={this.state.page}
                 />
-                <div className="col-md-1"></div>
+                <div className=" col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
 
 
               </div>

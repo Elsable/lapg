@@ -15,7 +15,7 @@ export class Lenguajes extends Component {
       <div className="row">
 
         {lenguajesB.items.map((lenguaje, i) => (
-          <div key={i} className="col-md-3">
+          <div key={i} className=" col-sm-3 col-md-3 col-lg-3 col-xl-3">
             <Collapse accordion active>
               <Panel header={<div>
                 {lenguaje.lenguaje}

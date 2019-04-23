@@ -41,7 +41,6 @@ export class Modal extends Component {
                 ><center>
                    <Card
                     hoverable
-                    style={{ width: 460 }}
                     cover={<img src={this.props.imagen} className="img-thumbnail" />}
                 ></Card>
                 <p style={{color:'dark'}}>
