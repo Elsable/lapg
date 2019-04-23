@@ -53,14 +53,14 @@ export default class Todos extends Component {
           </div>
           <div  className="pager col-sm-8 col-md-8 col-lg-8 col-xl-8 row">
           <div className=" col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <form method="get" action="https://doc-0g-8s-docs.googleusercontent.com/docs/securesc/oid0invqpiesjugjbpe27n37si1vpjp9/j81spt8gh5h39lj9irhrs5kumubbdkbd/1554393600000/08610602388310005526/08610602388310005526/1pLbcb1Wx1jKraVzSPMoAQYifQnyA2IzG?e=download">
+          <form method="get" action="https://cdn-files-occ.s3.amazonaws.com/documents/8f/8fjO9mRZnZdjNTHKaCpLZw2/resumefile/Developer-Luis-Antonio-Padre.pdf?AWSAccessKeyId=AKIAITM5FJ4VJNPOAEOA&Expires=1556048805&Signature=y221Ap1NAwQeINp5eGIZWyTTYKM%3D">
           <button className="btn btn-primary  " type="submit">Ver CV</button>
           </form>
         </div>
           <div className=" col-sm-6 col-md-6 col-lg-6 col-xl-6">
             
           
-          <form method="get" action="https://doc-0g-8s-docs.googleusercontent.com/docs/securesc/oid0invqpiesjugjbpe27n37si1vpjp9/j81spt8gh5h39lj9irhrs5kumubbdkbd/1554393600000/08610602388310005526/08610602388310005526/1pLbcb1Wx1jKraVzSPMoAQYifQnyA2IzG?e=download">
+          <form method="get" action="https://cdn-files-occ.s3.amazonaws.com/documents/8f/8fjO9mRZnZdjNTHKaCpLZw2/resumefile/Developer-Luis-Antonio-Padre.pdf?AWSAccessKeyId=AKIAITM5FJ4VJNPOAEOA&Expires=1556048805&Signature=y221Ap1NAwQeINp5eGIZWyTTYKM%3D">
                     <button className="btn btn-primary  " type="submit">Descargar CV</button>
           </form>
 
