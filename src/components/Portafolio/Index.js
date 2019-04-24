@@ -91,7 +91,7 @@ export default class Todos extends Component {
       <StickyContainer className="container">
         <Tabs defaultActiveKey="4" renderTabBar={renderTabBar}>
           <TabPane tab="Habilidades duras ★ " key="1" ><Skills /></TabPane>
-          <TabPane tab="Trabajos" key="2">Estadia en CAASIM y en UNAM(Facultad de Psicologia)</TabPane>
+          <TabPane tab="Trabajos" key="2"> Estadia en CAASIM <br/> en UNAM(Facultad de Psicologia)</TabPane>
           <TabPane tab="Certificados" key="3"><Certificados /></TabPane>
           <TabPane tab="Proyectos" key="4"><Proyectos/></TabPane>
           <TabPane tab="Curriculum vitae" key="5">
