@@ -7,7 +7,7 @@ export default class EstadisticaLenguaje extends Component {
       <div>
           Trabajos Realizados
           <hr/>
-        
+        <h1>Ningún trabajo Subido</h1>
       </div>
     )
   }
