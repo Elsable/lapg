@@ -26,3 +26,33 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.btn-li {
+  background-color: #0082CA;
+}
+
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.btn {
+  font-size: .8rem;
+  padding: .85rem 2.13rem;
+  border-radius: 2px;
+  border: 0;
+  color: #fff!important;
+  margin: 6px;
+  white-space: normal!important;
+}
+.btn, footer.page-footer .title {
+  text-transform: uppercase;
+}
