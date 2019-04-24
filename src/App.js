@@ -9,13 +9,9 @@ class App extends Component {
     return (
       <div className="App">
         <RouteIndex />
-        <div className="App-header page-footer center-on-small-only">
+        <div className="App-header">
           <h1 className="App-title">Contacto <br />Mexico</h1>
-
-          <ul>
-          <li> <a href="https://www.linkedin.com/in/lapg" target="_blank" class="btn  btn-li btn-lg wow fadeInLeft" data-wow-delay="0.2s"><i class="fa fa-linkedin left"></i> Linkedin</a> </li> 
-            </ul>
-           
+           <a href="https://www.linkedin.com/in/lapg" target="_blank" class="btn  btn-li btn-lg wow fadeInLeft" data-wow-delay="0.2s"><i class="fa fa-linkedin left"></i> Linkedin</a> 
         </div>
         
 
