@@ -16,7 +16,7 @@ export default class Proyectos extends React.Component{
     
   }
   ObtenerLista() {
-    axios.get(`http://localhost:3030/api/proyecto`).then(res => {
+    axios.get(`https://cors-anywhere.herokuapp.com/https://5cec5c1fc34422cff5a0eedf--nostalgic-cori-0ee532.netlify.com/api/proyecto`).then(res => {
       this.setState({ proyecto: res.data.proyectos});
     });
   }
