@@ -11,7 +11,7 @@ class App extends Component {
         <RouteIndex />
         <div className="App-header">
           <h1 className="App-title">Contacto <br />Mexico</h1>
-           <a href="https://www.linkedin.com/in/lapg" target="_blank" class="btn  btn-li btn-lg wow fadeInLeft" data-wow-delay="0.2s"><i class="fa fa-linkedin left"></i> Linkedin</a> 
+           <a href="https://www.linkedin.com/in/lapg" target="_blank" className="btn  btn-li btn-lg wow fadeInLeft" data-wow-delay="0.2s"><i className="fa fa-linkedin left"></i> Linkedin</a> 
         </div>
         
 
